@@ -1,5 +1,5 @@
 /**
- *  Copyright 2015 SmartThings
+, *  Copyright 2015 SmartThings
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  *  in compliance with the License. You may obtain a copy of the License at:
@@ -28,7 +28,7 @@ definition(
 preferences {
 
 	section("Monitor this door or window") {
-		input "contact", "capability.contactSensor"
+		input "contact", "capability.contactSensor", multiple: true
 	}
 	section("And notify me if it's open for more than this many minutes (default 10)") {
 		input "openThreshold", "number", description: "Number of minutes", required: false
